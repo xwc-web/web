@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<title>web前端工程师-徐伟晨的个人网站</title>
+	<link type="text/css" rel="stylesheet" href="css/swiper.min.css">
+	<link type="text/css" rel="stylesheet" href="css/animate.min.css">
+	<link type="text/css" rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+	<script type="text/javascript" src="js/swiper.min.js"></script>
+	<script type="text/javascript" src="js/swiper.animate1.0.2.min.js"></script>
+	<link rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css">
+</head>
+
+<body rlt="1" style="">
+	<svg aria-hidden="true" style="position: absolute; width: 0px; height: 0px; overflow: hidden;">
+		<symbol id="icon-redo" viewBox="0 0 1024 1024">
+			<path d="M0 576c0 152.928 67.04 290.176 173.344 384l84.672-96c-79.712-70.368-130.016-173.312-130.016-288 0-212.064 171.936-384 384-384 106.048 0 202.048 42.976 271.52 112.48l-143.52 143.52 384 0 0-384-149.984 149.984c-92.64-92.672-220.64-149.984-362.016-149.984-282.784 0-512 229.216-512 512z"></path>
+		</symbol>
+		<symbol id="icon-wxbsousuotuiguang" viewBox="0 0 1024 1024">
+			<path d="M937.798221 769.855766 714.895525 546.869159c23.821545-45.681412 37.589107-97.495498 37.589107-152.564721 0-182.559872-148.560524-331.078441-331.079464-331.078441-182.623317 0-331.098907 148.517545-331.098907 331.078441 0 182.559872 148.47559 331.078441 331.098907 331.078441 60.575634 0 117.27089-16.647145 166.206416-45.221948L807.552831 900.100132c17.938558 17.939581 41.551348 26.867928 65.12423 26.867928s47.182602-8.928347 65.123206-26.867928c17.396205-17.396205 27.033703-40.550555 27.033703-65.164139C964.831924 810.321386 955.194426 787.16806 937.798221 769.855766M133.027248 394.304438c0-158.989037 129.34795-288.358477 288.378943-288.358477 158.948105 0 288.3595 129.36944 288.3595 288.358477 0 99.206466-50.437739 186.899714-126.950344 238.795665-1.044796 0.416486-1.876744 1.252527-2.877537 1.835811-45.515636 30.03813-99.999528 47.727001-158.530596 47.727001C262.375198 682.662915 133.027248 553.336454 133.027248 394.304438M907.594315 869.896226c-19.273972 19.191084-50.562583 19.191084-69.836555 0L623.6995 655.797034c26.157753-20.274766 49.186236-44.305065 68.292386-71.421656l215.601406 215.683271c9.344832 9.262968 14.518668 21.694091 14.518668 34.877345S916.939147 860.551394 907.594315 869.896226"></path>
+			<path d="M215.169059 387.79007c0 0 42.156122-211.011878 234.186693-224.946238C449.355753 162.843832 185.944458 131.555222 215.169059 387.79007"></path>
+		</symbol>
+		<symbol id="icon-xiangshangjiantou" viewBox="0 0 1024 1024">
+			<path d="M966.4 668.8l-435.2-432c-9.6-9.6-25.6-9.6-35.2 0l-441.6 432c-9.6 9.6-9.6 25.6 0 35.2 9.6 9.6 25.6 9.6 35.2 0l425.6-416 416 416c9.6 9.6 25.6 9.6 35.2 0S976 678.4 966.4 668.8z"></path>
+		</symbol>
+		<symbol id="icon-xiangxiajiantou" viewBox="0 0 1024 1024">
+			<path d="M966.4 323.2c-9.6-9.6-25.6-9.6-35.2 0l-416 416-425.6-416c-9.6-9.6-25.6-9.6-35.2 0-9.6 9.6-9.6 25.6 0 35.2l441.6 432c9.6 9.6 25.6 9.6 35.2 0l435.2-432C976 345.6 976 332.8 966.4 323.2z"></path>
+		</symbol>
+		<symbol id="icon-change" viewBox="0 0 1024 1024">
+			<path d="M892.419 339.964c4.16-10.040 1.86-21.595-5.824-29.281l-126.469-126.469-37.997 37.997 80.603 80.603h-606.828v53.735h671.691c10.867 0 20.665-6.545 24.822-16.586z"></path>
+			<path d="M894.464 625.229h-671.691c-10.867 0-20.664 6.546-24.822 16.586-4.16 10.040-1.86 21.595 5.824 29.281l126.469 126.469 37.997-37.996-80.603-80.603h606.828v-53.735z"></path>
+		</symbol>
+		<symbol id="icon-close" viewBox="0 0 1024 1024">
+			<path d="M546.942134 511.818772l327.456957-326.128977c9.617355-9.577423 9.648071-25.135361 0.070648-34.751692-9.577423-9.617355-25.137409-9.647048-34.750668-0.070648L512.119795 477.137729 184.520518 150.868479c-9.616331-9.577423-25.176316-9.545683-34.751692 0.070648-9.577423 9.616331-9.545683 25.174268 0.070648 34.751692l327.457981 326.127953-327.457981 326.128978c-9.616331 9.577423-9.647048 25.135361-0.070648 34.751692a24.496456 24.496456 0 0 0 17.41117 7.231702 24.500552 24.500552 0 0 0 17.340522-7.162078L512.119795 546.499816l327.599276 326.26925a24.492361 24.492361 0 0 0 17.340522 7.162078 24.5026 24.5026 0 0 0 17.41117-7.231702c9.577423-9.617355 9.545683-25.175292-0.070648-34.751692L546.942134 511.818772z"
+			    fill="#353535"></path>
+		</symbol>
+		<symbol id="icon-refresh" viewBox="0 0 1025 1024">
+			<path d="M1000.803878 388.49588c-10.161038-8.99688-25.690307-8.051834-34.688211 2.109204l-61.519126 69.484954c-4.493833-44.37519-15.419713-87.479738-32.656822-128.641976-22.511143-53.755003-54.789128-101.965668-95.933959-143.294799C691.231126 103.00184 577.673029 56.107892 456.249444 56.107892c-60.834147 0-119.860112 11.920073-175.440703 35.42848-53.672069 22.700562-101.869423 55.194586-143.25282 96.579007-41.383397 41.383397-73.877422 89.580751-96.579007 143.25282-23.508407 55.580591-35.42848 114.60758-35.42848 175.440703 0 60.834147 11.920073 119.860112 35.42848 175.440703 22.700562 53.672069 55.194586 101.869423 96.579007 143.25282s89.580751 73.877422 143.25282 96.579007c55.580591 23.508407 114.60758 35.42848 175.440703 35.42848 54.671381 0 108.114099-9.688003 158.841474-28.794727 49.002128-18.457581 94.109396-45.155391 134.065497-79.351113 10.310525-8.824868 11.515638-24.337754 2.691795-34.648279-8.824868-10.310525-24.337754-11.515638-34.648279-2.691795-35.605612 30.473899-75.789016 54.259779-119.433151 70.699282-45.169725 17.012879-92.78244 25.640136-141.517334 25.640136-54.220871 0-106.805574-10.613595-156.296095-31.546931-47.813397-20.222759-90.760267-49.180284-127.645736-86.066777-36.885469-36.885469-65.842994-79.832339-86.066777-127.645736-20.932312-49.490521-31.545907-102.075224-31.545907-156.296095s10.613595-106.805574 31.545907-156.295071c20.223783-47.813397 49.180284-90.760267 86.066777-127.645736 36.886493-36.885469 79.832339-65.842994 127.645736-86.066777 49.489497-20.932312 102.075224-31.545907 156.296095-31.545907 108.254372 0 209.444958 41.755067 284.926808 117.573776 67.949126 68.251172 108.312733 157.16435 115.471739 253.034828l-101.959525-72.125554c-11.078439-7.836818-26.414194-5.209529-34.252036 5.869935-7.837842 11.079463-5.210552 26.415217 5.868911 34.25306l140.842594 99.631209c4.291103 3.03582 9.251828 4.512263 14.179788 4.512263 6.824196 0 13.58491-2.834115 18.410482-8.284256l103.1759-116.535556C1011.909962 413.02203 1010.964916 397.491737 1000.803878 388.49588z"></path>
+		</symbol>
+		<symbol id="icon-error" viewBox="0 0 1025 1024">
+			<path d="M982.668821 313.74918c-25.810101-60.752236-62.714-115.373446-109.685763-162.346233-46.972787-46.971763-101.593997-83.875662-162.346233-109.685763C647.666853 14.966132 580.925912 1.401699 512.268258 1.401699S376.868639 14.966132 313.898667 41.717184c-60.752236 25.810101-115.373446 62.714-162.346233 109.685763-46.971763 46.972787-83.875662 101.593997-109.685763 162.346233C15.115619 376.719151 1.551186 443.460092 1.551186 512.118771S15.115619 647.517366 41.866671 710.487337c25.810101 60.75326 62.714 115.37447 109.685763 162.346233 46.971763 46.972787 101.592974 83.876686 162.346233 109.685763 62.969971 26.752076 129.710912 40.316509 198.369591 40.316509s135.398595-13.564433 198.368567-40.316509c60.75326-25.809077 115.37447-62.712976 162.346233-109.685763 46.972787-46.971763 83.876686-101.592974 109.685763-162.346233 26.752076-62.969971 40.316509-129.710912 40.316509-198.368567S1009.419873 376.719151 982.668821 313.74918zM937.435615 691.271058c-23.333323 54.923257-56.71096 104.317532-99.204249 146.811845-42.494313 42.493289-91.888588 75.870926-146.811845 99.204249-56.8584 24.155503-117.133505 36.403219-179.152287 36.403219-62.018782 0-122.293887-12.247716-179.152287-36.403219-54.923257-23.333323-104.317532-56.71096-146.810821-99.204249-42.493289-42.494313-75.870926-91.888588-99.204249-146.811845C62.944374 634.412658 50.697682 574.136529 50.697682 512.118771c0-62.018782 12.247716-122.293887 36.403219-179.152287 23.333323-54.923257 56.709936-104.317532 99.204249-146.810821s91.888588-75.870926 146.810821-99.204249c56.8584-24.155503 117.133505-36.403219 179.152287-36.403219 62.017758 0 122.292863 12.247716 179.152287 36.403219 54.923257 23.333323 104.317532 56.709936 146.810821 99.204249 42.494313 42.493289 75.870926 91.888588 99.205273 146.810821 24.155503 56.8584 36.403219 117.134529 36.403219 179.152287S961.591118 634.412658 937.435615 691.271058z"></path>
+			<path d="M704.62457 319.769626c-9.997216-9.996192-26.203273-9.996192-36.199466 0L512.382933 475.810773 356.341786 319.769626c-9.996192-9.996192-26.204297-9.996192-36.199466 0-9.996192 9.996192-9.996192 26.203273 0 36.199466l156.041147 156.041147L320.14232 668.05241c-9.996192 9.997216-9.996192 26.204297 0 36.199466 4.997584 4.998608 11.549426 7.496888 18.100245 7.496888s13.101637-2.49828 18.100245-7.496888l156.041147-156.041147L668.424081 704.251876c4.998608 4.998608 11.548403 7.496888 18.100245 7.496888s13.101637-2.49828 18.100245-7.496888c9.996192-9.996192 9.996192-26.203273 0-36.199466L548.583423 512.011263l156.041147-156.041147C714.620762 345.973923 714.620762 329.765818 704.62457 319.769626z"></path>
+		</symbol>
+		<symbol id="icon-prompt" viewBox="0 0 1025 1024">
+			<path d="M637.349161 308.770026"></path>
+			<path d="M512.53242 1022.476459c-68.658678 0-135.399619-13.564433-198.369591-40.316509-60.752236-25.809077-115.373446-62.712976-162.346233-109.685763-46.971763-46.971763-83.875662-101.592974-109.685763-162.346233-26.751052-62.969971-40.315485-129.710912-40.315485-198.368567s13.564433-135.399619 40.315485-198.369591c25.810101-60.752236 62.714-115.373446 109.685763-162.346233 46.972787-46.971763 101.593997-83.875662 162.346233-109.685763 62.969971-26.751052 129.710912-40.315485 198.369591-40.315485s135.398595 13.564433 198.368567 40.315485c60.752236 25.810101 115.37447 62.714 162.346233 109.685763 46.972787 46.972787 83.876686 101.593997 109.686787 162.346233 26.752076 62.969971 40.316509 129.710912 40.316509 198.369591s-13.564433 135.398595-40.316509 198.368567c-25.810101 60.75326-62.712976 115.37447-109.685763 162.346233-46.971763 46.972787-101.593997 83.876686-162.346233 109.685763C647.93204 1008.912026 581.190075 1022.476459 512.53242 1022.476459zM512.53242 50.188811c-62.018782 0-122.293887 12.247716-179.152287 36.403219-54.923257 23.333323-104.317532 56.709936-146.810821 99.204249s-75.870926 91.888588-99.204249 146.810821c-24.155503 56.8584-36.403219 117.133505-36.403219 179.152287 0 62.017758 12.247716 122.292863 36.403219 179.152287 23.333323 54.923257 56.709936 104.317532 99.204249 146.811845 42.493289 42.493289 91.888588 75.870926 146.810821 99.204249 56.8584 24.155503 117.133505 36.403219 179.152287 36.403219 62.017758 0 122.293887-12.247716 179.153311-36.403219 54.923257-23.333323 104.317532-56.71096 146.810821-99.204249 42.494313-42.494313 75.87195-91.888588 99.205273-146.811845 24.155503-56.8584 36.403219-117.133505 36.403219-179.152287s-12.247716-122.293887-36.404243-179.152287c-23.333323-54.923257-56.71096-104.317532-99.204249-146.810821-42.494313-42.493289-91.888588-75.870926-146.811845-99.204249C634.825284 62.436527 574.550178 50.188811 512.53242 50.188811z"></path>
+			<path d="M512.442318 767.198298c-14.136785 0-25.597133-11.460348-25.597133-25.597133l0-332.127922c0-14.136785 11.460348-25.597133 25.597133-25.597133s25.597133 11.460348 25.597133 25.597133l0 332.127922C538.039452 755.737949 526.578079 767.198298 512.442318 767.198298z"></path>
+			<path d="M511.381573 319.924232c-17.522773 0-31.778329-14.255555-31.778329-31.778329 0-17.52175 14.255555-31.777305 31.778329-31.777305 17.52175 0 31.777305 14.255555 31.777305 31.777305C543.158878 305.668677 528.903323 319.924232 511.381573 319.924232z"></path>
+		</symbol>
+		<symbol id="icon-success" viewBox="0 0 1025 1024">
+			<path d="M511.679524 1023.15939c-68.658678 0-135.399619-13.564433-198.369591-40.316509-60.752236-25.809077-115.373446-62.712976-162.346233-109.685763-46.971763-46.971763-83.875662-101.592974-109.685763-162.346233-26.751052-62.969971-40.315485-129.710912-40.315485-198.368567s13.564433-135.399619 40.315485-198.369591c25.810101-60.752236 62.714-115.373446 109.685763-162.346233 46.972787-46.971763 101.593997-83.875662 162.346233-109.685763C376.279905 15.28968 443.020846 1.725247 511.679524 1.725247S647.078119 15.28968 710.048091 42.040731c60.752236 25.810101 115.37447 62.714 162.346233 109.685763 46.972787 46.972787 83.876686 101.593997 109.686787 162.346233 26.752076 62.969971 40.316509 129.710912 40.316509 198.369591s-13.564433 135.398595-40.316509 198.368567c-25.810101 60.75326-62.712976 115.37447-109.685763 162.346233-46.971763 46.972787-101.593997 83.876686-162.346233 109.685763C647.079143 1009.594957 580.337178 1023.15939 511.679524 1023.15939zM511.679524 50.871742c-62.018782 0-122.293887 12.247716-179.152287 36.403219-54.923257 23.333323-104.317532 56.709936-146.810821 99.204249s-75.870926 91.888588-99.204249 146.810821c-24.155503 56.8584-36.403219 117.133505-36.403219 179.152287 0 62.017758 12.247716 122.292863 36.403219 179.152287 23.333323 54.923257 56.709936 104.317532 99.204249 146.811845 42.493289 42.493289 91.888588 75.870926 146.810821 99.204249 56.8584 24.155503 117.133505 36.403219 179.152287 36.403219 62.017758 0 122.293887-12.247716 179.153311-36.403219 54.923257-23.333323 104.317532-56.71096 146.810821-99.204249 42.494313-42.494313 75.87195-91.888588 99.205273-146.811845 24.155503-56.8584 36.403219-117.133505 36.403219-179.152287s-12.247716-122.293887-36.404243-179.152287c-23.333323-54.923257-56.71096-104.317532-99.204249-146.810821-42.494313-42.493289-91.888588-75.870926-146.811845-99.204249C633.972387 63.119459 573.697282 50.871742 511.679524 50.871742z"></path>
+			<path d="M451.780185 689.848881c-6.223175 0-12.452493-2.255619-17.365095-6.794503L253.195578 515.658342c-10.384245-9.592782-11.027245-25.787576-1.434463-36.171821 9.592782-10.386293 25.786552-11.026221 36.171821-1.434463l163.146912 150.703633 289.753404-289.754428c9.997216-9.996192 26.203273-9.996192 36.199466 0 9.996192 9.996192 9.996192 26.203273 0 36.199466L469.883501 682.351993C464.896156 687.339338 458.342266 689.848881 451.780185 689.848881z"></path>
+		</symbol>
+	</svg>
+	<header class="header" style="opacity: 1;">
+		<div class="logo">
+			<div class="header_img">
+				<img src="img/my-2.jpg" alt="">
+			</div>
+			<div class="header_p">
+				<span class="pt">Xu Wei Chen</span>
+				<span class="pb">个人主页</span>
+			</div>
+		</div>
+		<nav class="nav">
+			<ul>
+				<li class="cur">
+					<a href="http://xuweichen.duapp.com/index.html">
+						<span>首页</span>
+						<i></i>
+					</a>
+				</li>
+				<li>
+					<a href="http://xuweichen.duapp.com/sas.html">
+						<span>作品展示</span>
+						<i></i>
+					</a>
+				</li>
+				<!-- <li><a href="http://www.lijian2015.com/html/browser.html"><span>浏览器中心</span><i></i></a></li> -->
+			</ul>
+		</nav>
+	</header>
+	<div class="swiper-container J-page-parent swiper-container-vertical">
+		<div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
+			<!-- 首屏 -->
+			<div id="large-header" class="page swiper-slide page-1 swiper-slide-active" style="height: 719px;">
+				<canvas id="demo-canvas" width="1440" height="719"></canvas>
+				<div class="contain-box">
+					<div class="my-pic ani                 fadeInUp animated" swiper-animate-duration="1.8s" swiper-animate-effect="fadeInUp"
+					    swiper-animate-delay="0.1s" swiper-animate-style-cache="visibility: visible;animation-duration:1.8s;-webkit-animation-duration:1.8s;animation-delay:0.1s;-webkit-animation-delay:0.1s;"
+					    style="visibility: visible; animation-duration: 1.8s; animation-delay: 0.1s;animation-duration:1.8s;-webkit-animation-duration:1.8s;animation-delay:0.1s;-webkit-animation-delay:0.1s;">
+						<img src="img/my.jpg" class="img-1">
+						<!-- <img src="./sas/my-2.jpg" class="img-2"> -->
+					</div>
+					<div class="home_info1 ani                 fadeInUp animated" swiper-animate-effect="fadeInUp" swiper-animate-delay="2.2s"
+					    swiper-animate-style-cache="visibility: visible;animation-delay:2.2s;-webkit-animation-delay:2.2s;" style="visibility: visible; animation-delay: 2.2s;animation-delay:2.2s;-webkit-animation-delay:2.2s;">
+						<p>人生就是一道坡，只有不懈攀登，才能到达顶坡，实现自我的最高价值！</p>
+					</div>
+					<div class="home-info2">
+						<p class="ani                 fadeInUp animated" swiper-animate-effect="fadeInUp" swiper-animate-delay="3.0s" swiper-animate-style-cache="visibility: visible;animation-delay:3.0s;-webkit-animation-delay:3.0s;"
+						    style="visibility: visible; animation-delay: 3s;animation-delay:3.0s;-webkit-animation-delay:3.0s;">我叫徐伟晨</p>
+						<p class="ani                 fadeInUp animated" swiper-animate-effect="fadeInUp" swiper-animate-delay="3.6s" swiper-animate-style-cache="visibility: visible;animation-delay:3.6s;-webkit-animation-delay:3.6s;"
+						    style="visibility: visible; animation-delay: 3.6s;animation-delay:3.6s;-webkit-animation-delay:3.6s;">24岁</p>
+						<p class="ani                 fadeInUp animated" swiper-animate-effect="fadeInUp" swiper-animate-delay="4.2s" swiper-animate-style-cache="visibility: visible;animation-delay:4.2s;-webkit-animation-delay:4.2s;"
+						    style="visibility: visible; animation-delay: 4.2s;animation-delay:4.2s;-webkit-animation-delay:4.2s;">前端开发工程师</p>
+						<p class="ani                 fadeInUp animated" swiper-animate-effect="fadeInUp" swiper-animate-delay="4.8s" swiper-animate-style-cache="visibility: visible;animation-delay:4.8s;-webkit-animation-delay:4.8s;"
+						    style="visibility: visible; animation-delay: 4.8s;animation-delay:4.8s;-webkit-animation-delay:4.8s;">手 机：13020293962</p>
+						<p class="ani                 fadeInUp animated" swiper-animate-effect="fadeInUp" swiper-animate-delay="5.4s" swiper-animate-style-cache="visibility: visible;animation-delay:5.4s;-webkit-animation-delay:5.4s;"
+						    style="visibility: visible; animation-delay: 5.4s;animation-delay:5.4s;-webkit-animation-delay:5.4s;">Q Q：1103485833</p>
+					</div>
+				</div>
+			</div>
+			<!-- 关于我 -->
+			<div class="page swiper-slide sub-page swiper-slide-next" style="height: 719px;">
+				<div class="contain-box">
+					<div class="h-title ani                    " swiper-animate-effect="bounceIn" swiper-animate-delay=" " swiper-animate-style-cache="visibility: hidden;"
+					    style="visibility: hidden;">
+						<h3 class="title">关于我</h3>
+						<i class="line"></i>
+						<span class="en-title">- ABOUT ME -</span>
+					</div>
+					<div class="my-info-box ani                    " swiper-animate-effect="fadeIn" swiper-animate-delay="0.8s" swiper-animate-style-cache="visibility: hidden;"
+					    style="visibility: hidden;">
+						<ul>
+							<li style=" ">
+								<div class="icon-box">
+									<img src="img/education.png" class="icon-img" style="left:20px;top:19px;">
+									<span class="icon"></span>
+									<span class="icon-hover"></span>
+								</div>
+								<div class="text-box">
+									<span class="text t-l">学 历</span>
+									<span class="line"></span>
+									<span class="text t-r">大专</span>
+								</div>
+							</li>
+							<li>
+								<div class="icon-box">
+									<img src="img/age.png" class="icon-img" style="left:19px;top:21px;">
+									<span class="icon"></span>
+									<span class="icon-hover"></span>
+								</div>
+								<div class="text-box">
+									<span class="text t-l">年 龄</span>
+									<span class="line"></span>
+									<span class="text t-r">24</span>
+								</div>
+							</li>
+							<li>
+								<div class="icon-box">
+									<img src="img/location.png" class="icon-img" style="left:17px;top:19px;">
+									<span class="icon"></span>
+									<span class="icon-hover"></span>
+								</div>
+								<div class="text-box">
+									<span class="text t-l">籍 贯</span>
+									<span class="line"></span>
+									<span class="text t-r">上海</span>
+								</div>
+							</li>
+							<li>
+								<div class="icon-box">
+									<img src="img/status.png" class="icon-img" style="left:15px;top:22px;">
+									<span class="icon"></span>
+									<span class="icon-hover"></span>
+								</div>
+								<div class="text-box">
+									<span class="text t-l">目 前</span>
+									<span class="line"></span>
+									<span class="text t-r">离职</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="my-summary">
+						<span class="bg-icon icon-left ani                    " swiper-animate-effect="bounceInLeft" swiper-animate-delay=" " swiper-animate-style-cache="visibility: hidden;"
+						    style="visibility: hidden;"></span>
+						<span class="bg-icon icon-right ani                    " swiper-animate-effect="bounceInRight" swiper-animate-delay=" " swiper-animate-style-cache="visibility: hidden;"
+						    style="visibility: hidden;"></span>
+						<p class="ani                    " swiper-animate-effect="fadeInUp" swiper-animate-delay="1.0s" swiper-animate-style-cache="visibility: hidden;"
+						    style="visibility: hidden;">2017年毕业于上海市东海技术学院，曾就职于上海逸尚云联信息技术股份有限公司</p>
+					</div>
+				</div>
+			</div>
+			<!-- 专业技能 -->
+			<div class="page swiper-slide sub-page" style="height: 719px;">
+				<div class="contain-box">
+					<div class="h-title ani               " swiper-animate-effect="bounceIn" swiper-animate-delay=" " swiper-animate-style-cache="visibility: hidden;"
+					    style="visibility: hidden;">
+						<h3 class="title">专业技能</h3>
+						<i class="line"></i>
+						<span class="en-title">- SKILL -</span>
+					</div>
+					<div class="skill-info ani               " swiper-animate-effect="fadeIn" swiper-animate-delay="1.2s" swiper-animate-style-cache="visibility: hidden;"
+					    style="visibility: hidden;">
+						<p>IT技术的学习需要持之以恒，对知识的认识深度与广度都很重要。对于前端而言更是如此，近几年前端框架层出不穷，前端技术已经从单纯的静态页面开发慢慢转变成mvc、mvvc等架构型开发，前端工程师正在渐渐向全栈工程师转变，前端开发的重中之重依然是javascript脚本的理解与应用，目前正在不断深入学习javascript知识。</p>
+					</div>
+					<div class="skill-list-box ani               " swiper-animate-effect="bounceIn" swiper-animate-delay="2.4s" swiper-animate-style-cache="visibility: hidden;"
+					    style="visibility: hidden;">
+						<ul>
+							<li class="J-skill-parent">
+								<div class="skill-btn">
+									<a href="javascript:void(0);" class="skill-icon J-skill-btn">
+										<img src="img/html.png">
+									</a>
+									<span class="skill-name">HTML</span>
+									<i class="skill-btn-icon"></i>
+								</div>
+								<div class="skill-item J-skill-info" style="display: none; opacity: 0;">
+									<p>· 熟练HTML/XHTML标签语意</p>
+									<p>· 深刻理解web标准</p>
+									<p>· 熟练div+css、熟悉盒模型和各类布局方式、能够根据设计图高效实现页面布局和交互效果</p>
+									<p>· 精通pc、wap页面开发</p>
+								</div>
+							</li>
+
+							<li class="J-skill-parent">
+								<div class="skill-btn">
+									<a href="javascript:void(0);" class="skill-icon J-skill-btn">
+										<img src="img/css.png">
+									</a>
+									<span class="skill-name">CSS</span>
+									<i class="skill-btn-icon"></i>
+								</div>
+								<div class="skill-item J-skill-info" style="display: none; opacity: 0;">
+									<p>· 熟练掌握css及css3新属性及用法、低版本IE浏览器兼容处理；</p>
+									<p>· 熟悉浏览器兼容性处理方法，熟练掌握响应式网页开发原理；</p>
+									<p>· 熟悉css3 font-face技术，制作并积累了部分常用font-face图标；</p>
+									<p>· 熟练掌握css预编译器Less及Sass技术；</p>
+									<p>· 掌握BootStrap框架，实践过响应式布局；</p>
+								</div>
+							</li>
+							<li class="J-skill-parent">
+								<div class="skill-btn">
+									<a href="javascript:void(0);" class="skill-icon J-skill-btn">
+										<img src="img/js.png">
+									</a>
+									<span class="skill-name">JavaScript</span>
+									<i class="skill-btn-icon"></i>
+								</div>
+								<div class="skill-item J-skill-info" style="display: none; opacity: 0;">
+									<p>· 熟悉javascript，以及jquery、zepto、swiper等常见框架使用</p>
+									<p>· 熟练掌握javascript Ajax交互开发原理</p>
+									<p>· 能进行常规WEB页面特效的开发</p>
+									<p>· 正在学习vue Js框架技术</p>
+								</div>
+							</li>
+							<li class="J-skill-parent on">
+								<div class="skill-btn">
+									<a href="javascript:void(0);" class="skill-icon J-skill-btn">
+										<img src="img/skill.png">
+									</a>
+									<span class="skill-name">Skill</span>
+									<i class="skill-btn-icon"></i>
+								</div>
+								<div class="skill-item J-skill-info" style="opacity: 1; display: block;">
+									<p>· 熟练使用firebug，chrome调试工具调试代码</p>
+									<p>· 了解网页SEO知识</p>
+									<p>· 熟练使用ps,sublime，webstrom等工具进行前端页面手工式开发</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- 专业技能 -->
+			<div class="page swiper-slide sub-page" style="height: 719px;">
+				<div class="contain-box">
+					<div class="h-title ani     " swiper-animate-effect="bounceIn" swiper-animate-delay=" " swiper-animate-style-cache="visibility: hidden;"
+					    style="visibility: hidden;">
+						<h3 class="title">专业技能</h3>
+						<i class="line"></i>
+						<span class="en-title">- SKILL -</span>
+					</div>
+					<div class="skill-assess-box">
+						<ul>
+							<li class="ani     " swiper-animate-effect="fadeInUp" swiper-animate-delay="1.2s" swiper-animate-style-cache="visibility: hidden;"
+							    style="visibility: hidden;">
+								<div class="skill-label">
+									<span class="label">HTML</span>
+									<!-- <div class="progress"><span style="background:rgb(128, 0, 128);width:95%;">95%</span></div> -->
+
+								</div>
+								<div class="skill-sumary">
+									<p>深刻理解web标准，熟悉html5新标签语意，能合理利用语意标签布局页面；</p>
+								</div>
+							</li>
+							<li class="ani     " swiper-animate-effect="fadeInUp" swiper-animate-delay="2.0s" swiper-animate-style-cache="visibility: hidden;"
+							    style="visibility: hidden;">
+								<div class="skill-label">
+									<span class="label">CSS</span>
+
+
+								</div>
+								<div class="skill-sumary">
+									<p>熟悉css3新特性属性及相关用法，有一定开发经验；了解css预编译语言less/sass；</p>
+								</div>
+							</li>
+							<li class="ani     " swiper-animate-effect="fadeInUp" swiper-animate-delay="2.8s" swiper-animate-style-cache="visibility: hidden;"
+							    style="visibility: hidden;">
+								<div class="skill-label">
+									<span class="label">JavaScript</span>
+
+								</div>
+								<div class="skill-sumary">
+									<p>熟悉JavaScript编程语言</p>
+								</div>
+							</li>
+							<li class="ani     " swiper-animate-effect="fadeInUp" swiper-animate-delay="3.6s" swiper-animate-style-cache="visibility: hidden;"
+							    style="visibility: hidden;">
+								<div class="skill-label">
+									<span class="label">Jqurey</span>
+
+
+								</div>
+								<div class="skill-sumary">
+									<p>熟练掌握jqurey开发页面特效，提高页面开发效率；</p>
+								</div>
+							</li>
+							<li class="ani     " swiper-animate-effect="fadeInUp" swiper-animate-delay="4.4s" swiper-animate-style-cache="visibility: hidden;"
+							    style="visibility: hidden;">
+								<div class="skill-label">
+									<span class="label">Zepto</span>
+
+
+								</div>
+								<div class="skill-sumary">
+									<p>熟练掌握zepto开发页面特效，提高页面开发效率(主要应用在移动端)；</p>
+								</div>
+							</li>
+							<li class="ani     " swiper-animate-effect="fadeInUp" swiper-animate-delay="5.2s" swiper-animate-style-cache="visibility: hidden;"
+							    style="visibility: hidden;">
+								<div class="skill-label">
+									<span class="label">vue.js</span>
+
+								</div>
+								<div class="skill-sumary">
+									<p>熟悉VUE框架搭建项目</p>
+								</div>
+							</li>
+							<li class="ani     " swiper-animate-effect="fadeInUp" swiper-animate-delay="6.0s" swiper-animate-style-cache="visibility: hidden;"
+							    style="visibility: hidden;">
+								<div class="skill-label">
+									<span class="label">Ajax</span>
+
+								</div>
+								<div class="skill-sumary">
+									<p>熟悉JavaScript、Ajax、Jsonp、DOM等前端技术，熟练应用ajax技术与后端数据进行交互处理；</p>
+								</div>
+							</li>
+							<li class="ani     " swiper-animate-effect="fadeInUp" swiper-animate-delay="6.8s" swiper-animate-style-cache="visibility: hidden;"
+							    style="visibility: hidden;">
+								<div class="skill-label">
+									<span class="label">Bootstrap</span>
+
+
+								</div>
+								<div class="skill-sumary">
+									<p>熟练掌握bootstrap框架及源码的使用方法；</p>
+								</div>
+							</li>
+							<li class="ani     " swiper-animate-effect="fadeInUp" swiper-animate-delay="7.6s" swiper-animate-style-cache="visibility: hidden;"
+							    style="visibility: hidden;">
+								<div class="skill-label">
+									<span class="label">Swiper</span>
+
+
+								</div>
+								<div class="skill-sumary">
+									<p>熟练使用Swiper框架开发页面动画效果，有一定开发经验；</p>
+								</div>
+							</li>
+							<li class="ani     " swiper-animate-effect="fadeInUp" swiper-animate-delay="8.4s" swiper-animate-style-cache="visibility: hidden;"
+							    style="visibility: hidden;">
+								<div class="skill-label">
+									<span class="label">php</span>
+
+
+								</div>
+								<div class="skill-sumary">
+									<p>熟悉简单php语句；</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- 尾页 -->
+			<div class="page swiper-slide sub-page" style="height: 719px;">
+				<div class="contain-box">
+					<div class="h-title ani" swiper-animate-effect="bounceIn" swiper-animate-delay=" " swiper-animate-style-cache="visibility: hidden;"
+					    style="visibility: hidden;">
+						<h3 class="title">联系我</h3>
+						<i class="line"></i>
+						<span class="en-title">- CONTACT ME -</span>
+					</div>
+					<div class="contact_text-1 ani" swiper-animate-effect="fadeInUp" swiper-animate-delay="1.2s" swiper-animate-style-cache="visibility: hidden;"
+					    style="visibility: hidden;">灵感 代码 梦想 未来</div>
+					<div class="contact_text-2 ani" swiper-animate-effect="fadeInUp" swiper-animate-delay="1.8s" swiper-animate-style-cache="visibility: hidden;"
+					    style="visibility: hidden;">
+						<span class="t1">INSPIRATION</span>
+						<span class="t2">CODE</span>
+						<span class="t3">DREAM</span>
+						<span class="t4">FUTURE</span>
+					</div>
+					<div class="contact_info">
+						<p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-delay="2.6s" swiper-animate-style-cache="visibility: hidden;"
+						    style="visibility: hidden;">互联网是个奇妙的行业，</p>
+						<p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-delay="3.4s" swiper-animate-style-cache="visibility: hidden;"
+						    style="visibility: hidden;">身为前端工程师，更贴近用户，这种体验非常美妙</p>
+						<p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-delay="4.2s" swiper-animate-style-cache="visibility: hidden;"
+						    style="visibility: hidden;">我热爱互联网，更热爱互联网前端技术，</p>
+						<p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-delay="5.0s" swiper-animate-style-cache="visibility: hidden;"
+						    style="visibility: hidden;">三人行，必有我师，</p>
+						<p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-delay="5.8s" swiper-animate-style-cache="visibility: hidden;"
+						    style="visibility: hidden;">让我们在互联网的浪潮里一起不断成长！</p>
+						<p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-delay="6.6s" swiper-animate-style-cache="visibility: hidden;"
+						    style="visibility: hidden;">手 机：13020293962</p>
+						<p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-delay="7.4s" swiper-animate-style-cache="visibility: hidden;"
+						    style="visibility: hidden;">Q Q：1103485833</p>
+					</div>
+					<!-- <div class="footer">Copyright © 2015 - 2026 lijian2015.com 所有 粤ICP备17012254号</div> -->
+				</div>
+			</div>
+		</div>
+		<div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets">
+			<span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+			<span class="swiper-pagination-bullet"></span>
+			<span class="swiper-pagination-bullet"></span>
+			<span class="swiper-pagination-bullet"></span>
+			<span class="swiper-pagination-bullet"></span>
+		</div>
+	</div>
+	<!-- <div class="ie-678-show">
+	<div class="ie-678-show-box"><div class="center warn-box">213</div></div>
+</div> -->
+
+	<!-- 首屏科技背景 -->
+	<script src="js/TweenLite.min.js"></script>
+	<script src="js/EasePack.min.js"></script>
+	<script src="js/demo-1.js"></script>
+	<script src="js/demoad.js"></script>
+	<script>
+		var mySwiper = new Swiper('.J-page-parent', {
+			direction: 'vertical',
+			mousewheelControl: true,
+			pagination: '.swiper-pagination',
+			paginationClickable: true,
+			onInit: function (swiper) { //Swiper2.x的初始化是onFirstInit
+				swiperAnimateCache(swiper); //隐藏动画元素 
+				swiperAnimate(swiper); //初始化完成开始动画
+			},
+			onSlideChangeEnd: function (swiper) {
+				swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+			}
+		})
+
+		var mySwiper = new Swiper('.J-slide-experience', {
+			prevButton: '.swiper-button-prev',
+			nextButton: '.swiper-button-next',
+			paginationType: 'fraction',
+			pagination: '.swiper-pagination-sub',
+		})
+	</script>
+
+	<script>
+		// 技能展示
+		$(function () {
+			$('.J-skill-btn').click(function (ev) {
+				var _this = $(this);
+				if (_this.parents('.J-skill-parent').hasClass('on')) {
+					$('.J-skill-parent').removeClass('on');
+					_this.parents('.J-skill-parent').find('.J-skill-info').stop().animate({
+						opacity: '0',
+						filter: 'alpha(opacity=0)'
+					}, 300, function () {
+						_this.parents('.J-skill-parent').find('.J-skill-info').hide();
+						_this.parents('.J-skill-parent').removeClass('on');
+					})
+				} else {
+					$('.J-skill-parent').removeClass('on');
+					$('.J-skill-info').stop().animate({
+						opacity: '0',
+						filter: 'alpha(opacity=0)'
+					}, 300, function () {
+						$('.J-skill-info').hide();
+					})
+					_this.parents('.J-skill-parent').addClass('on');
+					_this.parents('.J-skill-parent').find('.J-skill-info').stop().animate({
+						opacity: '1',
+						filter: 'alpha(opacity=100)'
+					}, 300, function () {
+						_this.parents('.J-skill-parent').find('.J-skill-info').show();
+					})
+				}
+				ev.stopPropagation();
+			})
+			$('body').click(function () {
+				$('.J-skill-parent').removeClass('on');
+				$('.J-skill-info').stop().animate({
+					opacity: '0',
+					filter: 'alpha(opacity=0)'
+				}, 300, function () {
+					$('.J-skill-info').hide();
+				})
+			})
+			$("body").scroll(function () {
+				alert(123)
+				$('.J-skill-parent').removeClass('on');
+				$('.J-skill-info').stop().animate({
+					opacity: '0',
+					filter: 'alpha(opacity=0)'
+				}, 300, function () {
+					$('.J-skill-info').hide();
+				})
+			});
+		})
+
+		function warn() {
+			alert('正在建设中...')
+		}
+
+		$(function () {
+			var b_name = navigator.appName;
+			var b_version = navigator.appVersion;
+			var version = b_version.split(";");
+			var trim_version = version[1].replace(/[ ]/g, "");
+			if (b_name == "Microsoft Internet Explorer") {
+				/*如果是IE6或者IE7*/
+				if (trim_version == "MSIE7.0" || trim_version == "MSIE6.0") {
+					alert("IE浏览器版本过低，请到指定网站去下载相关版本");
+					//然后跳到需要连接的下载网站 
+					//window.location.href="http://jiaoxueyun.com/download.jsp"; 
+				}
+			}
+		});
+	</script>
+
+
+
+</body>
+
+</html>
